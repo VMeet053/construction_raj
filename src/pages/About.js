@@ -61,7 +61,7 @@ const About = () => {
                   style={{ width: "120px", height: "120px" }}
                 >
                   <h1 className="display-1 mb-n2" data-toggle="counter-up">
-                    25
+                    7
                   </h1>
                 </div>
                 <div className="ps-4">
