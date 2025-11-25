@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Spinner from '../components/Spinner';
-import Topbar from '../components/Topbar';
+// import Topbar from '../components/Topbar';
 import Navbar from '../components/Navbar';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
@@ -24,7 +24,7 @@ const Testimonial = () => {
   return (
     <>
       <Spinner />
-      <Topbar />
+      {/* <Topbar /> */}
       <Navbar />
       <PageHeader title="Testimonial" />
       

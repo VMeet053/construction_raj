@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Spinner from '../components/Spinner';
-import Topbar from '../components/Topbar';
+//import Topbar from '../components/Topbar';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BackToTop from '../components/BackToTop';
@@ -10,7 +10,7 @@ const NotFound = () => {
   return (
     <>
       <Spinner />
-      <Topbar />
+      {/* <Topbar /> */}
       <Navbar />
       
       <div className="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">

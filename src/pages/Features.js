@@ -1,6 +1,6 @@
 import React from 'react';
 import Spinner from '../components/Spinner';
-import Topbar from '../components/Topbar';
+//import Topbar from '../components/Topbar';
 import Navbar from '../components/Navbar';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
@@ -11,7 +11,7 @@ const Features = () => {
   return (
     <>
       <Spinner />
-      <Topbar />
+      {/* <Topbar /> */}
       <Navbar />
       <PageHeader title="Our Features" />
       
@@ -55,7 +55,7 @@ const Features = () => {
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
               <div className="feature-img">
                 <img className="img-fluid" src="/img/qw.jpg" alt="" />
-                <img className="img-fluid" src="/img/about-1.jpg" alt="" />
+                <img className="img-fluid" src="/img/home.jpg" alt="" />
               </div>
             </div>
           </div>

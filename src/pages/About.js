@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Spinner from '../components/Spinner';
-import Topbar from '../components/Topbar';
+//import Topbar from '../components/Topbar';
 import Navbar from '../components/Navbar';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
@@ -19,7 +19,7 @@ const About = () => {
   return (
     <>
       <Spinner />
-      <Topbar />
+      {/* <Topbar /> */}
       <Navbar />
       <PageHeader title="About Us" />
 
@@ -29,8 +29,8 @@ const About = () => {
           <div className="row g-5">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <div className="about-img">
-                <img className="img-fluid" src="/img/about-1.jpg" alt="" />
-                <img className="img-fluid" src="/img/about-2.jpg" alt="" />
+                <img className="img-fluid" src="/img/a1.jpg" alt="" />
+                <img className="img-fluid" src="/img/a2.jpg" alt="" />
               </div>
             </div>
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -95,9 +95,8 @@ const About = () => {
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
               <div className="feature-img">
-                <img className="img-fluid" src="/img/about-2.jpg" alt="" />
-                <img className="img-fluid" src="/img/about-1.jpg" alt="" />
-              </div>
+ <img className="img-fluid" src="/img/qw.jpg" alt="" />
+                <img className="img-fluid" src="/img/home.jpg" alt="" />              </div>
             </div>
           </div>
         </div>
