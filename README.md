@@ -5,6 +5,7 @@ This is a React conversion of the Arkitektur HTML template - a modern architectu
 ## Setup Instructions
 
 ### 1. Copy Assets
+
 You need to copy the following folders from your original project to the `public` folder:
 
 ```
@@ -16,6 +17,7 @@ arkitektur-1.0.0/
 ```
 
 ### 2. Install Dependencies
+
 Navigate to the project folder and install dependencies:
 
 ```bash
@@ -24,6 +26,7 @@ npm install
 ```
 
 ### 3. Run the Application
+
 Start the development server:
 
 ```bash
@@ -33,6 +36,7 @@ npm start
 The application will open in your browser at `http://localhost:3000`
 
 ### 4. Build for Production
+
 To create a production build:
 
 ```bash

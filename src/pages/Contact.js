@@ -1,14 +1,12 @@
-﻿import React from 'react';
-import Spinner from '../components/Spinner';
+﻿import React from "react";
+import Spinner from "../components/Spinner";
 //import Topbar from '../components/Topbar';
-import Navbar from '../components/Navbar';
-import PageHeader from '../components/PageHeader';
-import Footer from '../components/Footer';
-import BackToTop from '../components/BackToTop';
+import Navbar from "../components/Navbar";
+import PageHeader from "../components/PageHeader";
+import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
 
 const Contact = () => {
-
-
   const handlesubmit = async (e) => {
     e.preventDefault();
 
@@ -18,7 +16,8 @@ const Contact = () => {
     const message = e.target.message.value;
 
     // આ URLs અને entry IDs તમારું Google Form inspect કરી મેળવો
-    const formURL = "https://script.google.com/macros/s/AKfycbxZbcqlLwFXQdILvvbCk5iAwJXQEnHHhEQr1mQpZg12LUmT44U5sPYw8tZRhojNHYpCnA/exec";
+    const formURL =
+      "https://script.google.com/macros/s/AKfycbxZbcqlLwFXQdILvvbCk5iAwJXQEnHHhEQr1mQpZg12LUmT44U5sPYw8tZRhojNHYpCnA/exec";
 
     const formData = new FormData();
     formData.append("entry.1111111111", name);
@@ -30,7 +29,7 @@ const Contact = () => {
       await fetch(formURL, {
         method: "POST",
         mode: "no-cors", // Google Forms cross-origin support નથી આપતું
-        body: formData
+        body: formData,
       });
       alert("✅ Your message has been submitted!");
     } catch (error) {
@@ -38,9 +37,6 @@ const Contact = () => {
       alert("❌ Something went wrong!");
     }
   };
-
-
-
 
   return (
     <>
@@ -51,36 +47,56 @@ const Contact = () => {
 
       <div className="container-xxl py-5">
         <div className="container">
-          <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
+          <div
+            className="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style={{ maxWidth: "600px" }}
+          >
             <h4 className="section-title">Contact Us</h4>
-            <h1 className="display-5 mb-4">If You Have Any Query, Please Feel Free Contact Us</h1>
+            <h1 className="display-5 mb-4">
+              If You Have Any Query, Please Feel Free Contact Us
+            </h1>
           </div>
           <div className="row g-5">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
               <div className="d-flex flex-column justify-content-between h-100">
                 <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
-                  <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: '55px', height: '55px' }}>
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark"
+                    style={{ width: "55px", height: "55px" }}
+                  >
                     <i className="fa fa-map-marker-alt text-primary"></i>
                   </div>
                   <div className="ms-4">
                     <p className="mb-2">Address 1</p>
-                    <h3 className="mb-0">303,Third FLoor,Dreamland complex, Sarthana, Jakatnaka, Surat</h3>
-                  </div>
-                </div>
-
-                 <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
-                  <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: '55px', height: '55px' }}>
-                    <i className="fa fa-map-marker-alt text-primary"></i>
-                  </div>
-                  <div className="ms-4">
-                    <p className="mb-2">Address 2</p>
-                    <h3 className="mb-0">202, Kopper Arcade, Opp Vishveshwar Mahadev Temple, Mavdi main road,Rajkot
+                    <h3 className="mb-0">
+                      303,Third FLoor,Dreamland complex, Sarthana, Jakatnaka,
+                      Surat
                     </h3>
                   </div>
                 </div>
 
-                 <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
-                  <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: '55px', height: '55px' }}>
+                <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark"
+                    style={{ width: "55px", height: "55px" }}
+                  >
+                    <i className="fa fa-map-marker-alt text-primary"></i>
+                  </div>
+                  <div className="ms-4">
+                    <p className="mb-2">Address 2</p>
+                    <h3 className="mb-0">
+                      202, Kopper Arcade, Opp Vishveshwar Mahadev Temple, Mavdi
+                      main road,Rajkot
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark"
+                    style={{ width: "55px", height: "55px" }}
+                  >
                     <i className="fa fa-map-marker-alt text-primary"></i>
                   </div>
                   <div className="ms-4">
@@ -89,7 +105,10 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
-                  <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: '55px', height: '55px' }}>
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark"
+                    style={{ width: "55px", height: "55px" }}
+                  >
                     <i className="fa fa-phone-alt text-primary"></i>
                   </div>
                   <div className="ms-4">
@@ -98,7 +117,10 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="bg-light d-flex align-items-center w-100 p-4">
-                  <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: '55px', height: '55px' }}>
+                  <div
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark"
+                    style={{ width: "55px", height: "55px" }}
+                  >
                     <i className="fa fa-envelope-open text-primary"></i>
                   </div>
                   <div className="ms-4">
@@ -113,30 +135,55 @@ const Contact = () => {
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-floating">
-                      <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                      />
                       <label htmlFor="name">Your Name</label>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-floating">
-                      <input type="email" className="form-control" id="email" placeholder="Your Email" />
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        placeholder="Your Email"
+                      />
                       <label htmlFor="email">Your Email</label>
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="form-floating">
-                      <input type="text" className="form-control" id="subject" placeholder="Subject" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="subject"
+                        placeholder="Subject"
+                      />
                       <label htmlFor="subject">Subject</label>
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="form-floating">
-                      <textarea className="form-control" placeholder="Leave a message here" id="message" style={{ height: '100px' }}></textarea>
+                      <textarea
+                        className="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style={{ height: "100px" }}
+                      ></textarea>
                       <label htmlFor="message">Message</label>
                     </div>
                   </div>
                   <div className="col-12">
-                    <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                    <button
+                      className="btn btn-primary w-100 py-3"
+                      type="submit"
+                    >
+                      Send Message
+                    </button>
                   </div>
                 </div>
               </form>

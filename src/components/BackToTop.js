@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -12,14 +12,14 @@ const BackToTop = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -31,7 +31,7 @@ const BackToTop = () => {
         e.preventDefault();
         scrollToTop();
       }}
-      style={{ display: visible ? 'flex' : 'none' }}
+      style={{ display: visible ? "flex" : "none" }}
     >
       <i className="bi bi-arrow-up"></i>
     </a>

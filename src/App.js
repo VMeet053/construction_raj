@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import Features from './pages/Features';
-import Projects from './pages/Projects';
-import Team from './pages/Team';
-import Appointment from './pages/Appointment';
-import Testimonial from './pages/Testimonial';
-import NotFound from './pages/NotFound';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Features from "./pages/Features";
+import Projects from "./pages/Projects";
+import Team from "./pages/Team";
+import Appointment from "./pages/Appointment";
+import Testimonial from "./pages/Testimonial";
+import NotFound from "./pages/NotFound";
 
 function App() {
   useEffect(() => {
